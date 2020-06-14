@@ -1,0 +1,1 @@
+var name="sufyan" , age=22 , cast="khan"; 

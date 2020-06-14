@@ -1,0 +1,57 @@
+var subject1=prompt("enter subject 1")
+var a=prompt("enter obtain marks of subject 1")
+var ob_marks1=parseInt(a)
+var subject2=prompt("enter subject 2")
+var b=prompt("enter obtain marks of subject 2")
+var ob_marks2=parseInt(b)
+var subject3=prompt("enter subject 3")
+var c=prompt("enter obtain marks of subject 3")
+var ob_marks3=parseInt(c)
+var total=100;
+var p1=(ob_marks1/total)*100;
+var p2=(ob_marks2/total)*100;
+var p3=(ob_marks3/total)*100;
+var g_total=300;
+var g_ob=ob_marks1+ob_marks2+ob_marks3;
+var g_p=(g_ob/g_total)*100;
+
+function myFunction() {
+    var table = document.getElementById("myTable");
+    var row = table.insertRow(1);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    var cell3 = row.insertCell(2);
+    var cell4 = row.insertCell(3);
+    cell1.innerHTML = subject1;
+    cell2.innerHTML = total;
+    cell3.innerHTML = ob_marks1;
+    cell4.innerHTML = p1;
+    var row = table.insertRow(2);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    var cell3 = row.insertCell(2);
+    var cell4 = row.insertCell(3);
+    cell1.innerHTML = subject2;
+    cell2.innerHTML = total;
+    cell3.innerHTML = ob_marks2;
+    cell4.innerHTML = p2;
+    var row = table.insertRow(3);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    var cell3 = row.insertCell(2);
+    var cell4 = row.insertCell(3);
+    cell1.innerHTML = subject3;
+    cell2.innerHTML = total;
+    cell3.innerHTML = ob_marks3;
+    cell4.innerHTML = p3;
+
+    var row = table.insertRow(4);
+    var cell2 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    var cell3 = row.insertCell(2);
+    var cell4 = row.insertCell(3);
+    cell1.innerHTML = "";
+    cell2.innerHTML = g_total;
+    cell3.innerHTML = g_total;
+    cell4.innerHTML = g_p;
+  }
